@@ -63,8 +63,7 @@ function promptUserPurchase() {
             } else {
                 var productData = data[0];
 
-                console.log('productData = ' + JSON.stringify(productData));
-                // console.log('productData.stock_quantity = ' + productData.stock_quantity);
+               
 
                 // If the quantity requested by the user is in stock
                 if (quantity <= productData.stock_quantity) {
@@ -98,7 +97,8 @@ function promptUserPurchase() {
 
 // displayInventory will retrieve the current inventory from the database and output it to the console
 function displayInventory() {
-    // console.log('___ENTER displayInventory___');
+    // Below was not logged ***
+    console.log('___ENTER displayInventory___'); 
 
     // Construct the db query string
     queryStr = 'SELECT * FROM products';
